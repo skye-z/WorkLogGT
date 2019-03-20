@@ -12,3 +12,6 @@ WorkLogGT-master/
 ├── page.html 窗体内置页面
 ├── script.js 生成相关脚本
 ```
+
+## 使用方法
+
