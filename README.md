@@ -15,3 +15,7 @@ WorkLogGT-master/
 
 ## 使用方法
 
+![首屏](https://raw.githubusercontent.com/skai-zhang/WorkLogGT/master/readme-1.png)
+
+
+![次屏](https://raw.githubusercontent.com/skai-zhang/WorkLogGT/master/readme-2.png)
