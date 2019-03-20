@@ -10,7 +10,7 @@
   },
   "scripts": {
     "start": "electron .",
-    "packager": "electron-packager . StacksAccelerator --win --out . --arch=x64 --app-version 1.0.0 --overwrite --electron-version=4.0.4 --icon=./resources/picture/logo.ico"
+    "packager": "electron-packager . WorkLogGT --win --out . --arch=x64 --app-version 1.0.0 --overwrite --electron-version=4.0.4 --icon=./logo.ico"
   },
   "dependencies": {
     "jquery": "^3.3.1"

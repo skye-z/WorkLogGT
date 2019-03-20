@@ -33,6 +33,7 @@ bower_components
 build/Release
 
 # Dependency directories
+WorkLogGT-win32-x64/
 node_modules/
 jspm_packages/
 

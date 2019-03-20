@@ -1,0 +1,82 @@
+body {
+    padding: 10px 20px 20px 20px;
+    background-color: #F4F4F4;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    margin: 0px;
+    cursor: default;
+    -webkit-app-region: drag;
+}
+
+.messagers-holder.bottom {
+    padding: 0px;
+}
+
+.messager.bottom.fade {
+    width: 100%;
+    text-align: center;
+    margin: 0px;
+    border-radius: 0px;
+}
+
+.messager-content {
+    padding: 2px;
+}
+
+.m-b-10 {
+    margin-bottom: 10px;
+}
+
+.m-t-0 {
+    margin-top: 0px;
+}
+
+.m-b-20 {
+    margin-bottom: 20px;
+}
+
+#Model-A {
+    background-color: #F4F4F4;
+}
+
+#Model-B {
+    background-color: #F4F4F4;
+    display: none;
+}
+
+#Content,
+#DataArea {
+    resize: none;
+}
+
+#Copyright {
+    text-align: center;
+    color: #ababab;
+    margin-bottom: 0px;
+    width: 100%;
+    position: fixed;
+    bottom: 10px;
+    left: 0px;
+    cursor: default;
+}
+
+.BtnModel {
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 30px;
+    left: 0px;
+}
+
+.BtnModel .btn-success{
+    width: 200px;
+}
+
+.TextLength {
+    text-align: center;
+    color: #ababab;
+    margin-bottom: 0px;
+}

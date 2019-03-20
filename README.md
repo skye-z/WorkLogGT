@@ -17,6 +17,7 @@ WorkLogGT-master/
 ├── index.js 窗体相关脚本
 ├── package-lock.json 依赖包小版本锁定配置
 ├── package.json 项目基础信息配置
+├── page.css 内置页面样式
 ├── page.html 窗体内置页面
 ├── script.js 生成相关脚本
 ```

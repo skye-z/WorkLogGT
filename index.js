@@ -5,7 +5,6 @@ const {
 } = require('electron')
 var Config = require("./package.json");
 var MainWindow = null;
-var MinorWindow = null;
 
 app.on('ready', () => {
     MainWindow = new BrowserWindow({
