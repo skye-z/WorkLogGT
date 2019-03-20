@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Work Log Generation Tool | 工作日志生成工具</title>
+    <link href="https://cdn.bootcss.com/zui/1.8.1/css/zui.min.css" rel="stylesheet">
+    <style>
+        body{
+            padding: 10px 20px 20px 20px;background-color: #F4F4F4;
+        }
+
+        h1{
+            text-align: center;padding: 20px;margin:0px;cursor: default;-webkit-app-region: drag;
+        }
+
+        .messagers-holder.bottom{
+            padding: 0px;
+        }
+
+        .messager.bottom.fade{
+            width: 100%;
+            text-align: center;
+            margin: 0px;
+            border-radius: 0px;
+        }
+
+        .messager-content{
+            padding: 2px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>WorkLogTG · 日志生成工具</h1>
+    <div id="Model-A" style="background-color: #F4F4F4;">
+        <div class="panel">
+            <div class="panel-body">
+                <div class="input-group" style="margin-bottom: 20px;">
+                    <span class="input-group-addon">项目名称</span>
+                    <input type="text" class="form-control" id="ProjectName">
+                </div>
+                <div class="input-group" style="margin-bottom: 20px;">
+                    <span class="input-group-addon">个人情况</span>
+                    <select class="form-control" id="ProjectIdentity">
+                        <option value="0">选择身份</option>
+                        <option value="1">项目经理</option>
+                        <option value="2">前端开发</option>
+                        <option value="2">后端开发</option>
+                    </select>
+                    <span class="input-group-addon fix-border fix-padding"></span>
+                    <select class="form-control" id="ProjectStage">
+                        <option value="0">选择跟进阶段</option>
+                        <option value="2">刚刚接手(熟悉)</option>
+                        <option value="2">步入正轨(正常)</option>
+                        <option value="2">善后收尾(结束)</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon">涉及内容</span>
+                    <textarea class="form-control" rows="3" style="resize:none" placeholder="一行一条涉及项" id="Content"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="panel" style="margin-bottom: 10px;">
+            <div class="panel-body">
+                <h6 style="margin-top: 0px;">涵盖内容</h6>
+                <label class="checkbox-inline">
+                    <input type="checkbox"> 熟悉
+                </label>
+                <label class="checkbox-inline">
+                    <input type="checkbox"> 研究
+                </label>
+                <label class="checkbox-inline">
+                    <input type="checkbox"> 编写
+                </label>
+                <label class="checkbox-inline">
+                    <input type="checkbox"> 完善
+                </label>
+                <label class="checkbox-inline">
+                    <input type="checkbox"> 优化
+                </label>
+                <label class="checkbox-inline">
+                    <input type="checkbox"> 测试
+                </label>
+                <label class="checkbox-inline">
+                    <input type="checkbox"> 修复
+                </label>
+                <br>
+                <label class="checkbox-inline">
+                    <input type="checkbox"> 修改
+                </label>
+                <label class="checkbox-inline">
+                    <input type="checkbox"> 对接
+                </label>
+                <label class="checkbox-inline">
+                    <input type="checkbox"> 整理
+                </label>
+            </div>
+        </div>
+        <div style="text-align: center;width: 100%; position: fixed; bottom: 30px; left: 0px;">
+            <a class="btn" onclick="Close()">退出</a>
+            <a class="btn btn-success" style="width: 200px;" onclick="Next()">生成</a>
+        </div>
+    </div>
+    <div id="Model-B" style="background-color: #F4F4F4;display: none;">
+        <textarea id="DataArea" class="form-control" rows="15" style="resize:none" readonly></textarea>
+        <h6 style="text-align: center;color: #ababab;margin-bottom: 0px;">当前已有<span id="Size"></span>字</h6>
+        <div style="text-align: center;width: 100%; position: fixed; bottom: 30px; left: 0px;">
+            <a class="btn" onclick="Last()">返回</a>
+            <a class="btn btn-success" style="width: 200px;" onclick="Copy()">复制</a>
+        </div>
+    </div>
+    <h6 style="text-align: center;color: #ababab;margin-bottom: 0px;width: 100%; position: fixed; bottom: 10px; left: 0px;cursor: default;"><small>Copyright
+            © 2019 sKai-Zhang All Rights Reserved.</small></h6>
+    <script>
+        window.$ = window.jQuery = require("jquery");
+    </script>
+    <script src="https://cdn.bootcss.com/zui/1.8.1/js/zui.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
